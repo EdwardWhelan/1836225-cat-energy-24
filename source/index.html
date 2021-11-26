@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <!-- Импортировать и вставить дома лого -->
+    </a>
+    <a class="page-header__second-logo">
+      <!-- Иморптировать повторяющееся лого -->
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <div class="promo-wrapper">
+        <h1 class="promo-wrapper__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="promo-wrapper__text">
+          Занялся собой? Займись котом!
+        </p>
+        <a class="promo-form" href="form.html">
+          Подобрать программу
+        </a>
+      </div>
+    </section>
+  </main>
   </body>
 </html>
