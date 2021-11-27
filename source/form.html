@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подбор программы</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logo-cat.svg" width="34" height="38" alt="Логотип кота.">
+    </a>
+    <a class="page-header__second-logo">
+      <img src="img/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a>
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form-main">
+    <h1 class="visually-hidden">
+      Анкета для подбора программы
+    </h1>
+    <section class="questionary">
+      <div class="questionary__wrapper">
+        <h2 class="questionary__title">
+          Подбор программы
+        </h2>
+        <p class="questionary__text">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+      </div>
+      <form class="form-options" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-options__wrapper">
+          <fieldset class="form-options__fieldset">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <ul class="form-options__list">
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  ИМЯ:*
+                  <input class="form_options__input" type="text" name="namecat" placeholder="Барсик" required>
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  Вес (кг):*
+                  <input class="form_options__input" type="text" name="wightcat" placeholder="7" required>
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  Возраст (лет):
+                  <input class="form_options__input" type="text" name="yearscat" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-options__fieldset">
+            <legend class="visually-hidden">Тип питания</legend>
+            <ul class="form-options__list">
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="radio" name="options" checked>
+                  похудение
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="radio" name="options">
+                  Набор массы
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="radio" name="options">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-options__fieldset">
+            <legend class="form-options__legend">Контактные данные
+              (владельца кота)</legend>
+            <ul class="form-options__list">
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  E-mail:*
+                  <input class="form_options__input" type="email" name="email" placeholder="kuklachev@gmail.com"
+                    required>
+                </label>
+                <!-- SVG -->
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  Телефон:*
+                  <input class="form_options__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                </label>
+                <!-- SVG -->
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form-options__comment ">
+            <label class="form-options__label">Комментарий
+              <textarea class="form-options__textarea" name="comment" id="comment"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+          <fieldset class="form-options__fieldset">
+            <legend class="visually-hidden">Дополнительно</legend>
+            <ul class="form-options__list">
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="checkbox" name="additionally" checked>
+                  сахарозаменитель
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="checkbox" name="additionally">
+                  питьевая вода
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="checkbox" name="additionally">
+                  молоко
+                </label>
+              </li>
+              <li class="form-options__item">
+                <label class="form-options__label">
+                  <input class="form_options__input" type="checkbox" name="additionally">
+                  витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form-options__submit">
+            <button class="form-option__button" type="submit">отправить заявку</button>
+            <p class="form-options__requared">
+              * — Обязательные поля
+            </p>
+          </div>
+        </div>
+      </form>
+      <footer class="page-footer">
+        <div class="page-footer-wrapper">
+          <a class="page-footer__logo">
+            <img src="img/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+          </a>
+          <div class="social page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+                  Инстаграме.</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+                  Фейсбуке.</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <!-- temporary picture -->
+            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__link-logo" src="img/academy-logo.svg" width="27" height="34"
+                alt="Логотип HTML Academy.">
+            </a>
+          </div>
+        </div>
+
+      </footer>
+    </section>
+  </main>
+</body>
+
+</html>
