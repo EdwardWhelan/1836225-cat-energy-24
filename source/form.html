@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="img/logo-cat.svg" width="34" height="38" alt="Логотип кота.">
     </a>
     <a class="page-header__second-logo">
@@ -42,14 +42,11 @@
     </nav>
   </header>
   <main class="form-main">
-    <h1 class="visually-hidden">
-      Анкета для подбора программы
-    </h1>
     <section class="questionary">
       <div class="questionary__wrapper">
-        <h2 class="questionary__title">
+        <h1 class="questionary__title">
           Подбор программы
-        </h2>
+        </h1>
         <p class="questionary__text">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
@@ -81,7 +78,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-options__fieldset">
-            <legend class="visually-hidden">Тип питания</legend>
+            <legend class="visually-hidden">Цель программы</legend>
             <ul class="form-options__list">
               <li class="form-options__item">
                 <label class="form-options__label">
@@ -104,7 +101,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-options__fieldset">
-            <legend class="form-options__legend">Контактные данные
+            <legend class="form-options__title">Контактные данные
               (владельца кота)</legend>
             <ul class="form-options__list">
               <li class="form-options__item">
@@ -125,35 +122,35 @@
             </ul>
           </fieldset>
           <div class="form-options__comment ">
-            <label class="form-options__label">Комментарий
+            <label class="form-options__title">Комментарий
               <textarea class="form-options__textarea" name="comment" id="comment"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
           <fieldset class="form-options__fieldset">
-            <legend class="visually-hidden">Дополнительно</legend>
+            <legend class="form-options__title">Дополнительно</legend>
             <ul class="form-options__list">
               <li class="form-options__item">
                 <label class="form-options__label">
-                  <input class="form-options__input" type="checkbox" name="additionally" checked>
+                  <input class="form-options__input" type="checkbox" name="sweetener" checked>
                   сахарозаменитель
                 </label>
               </li>
               <li class="form-options__item">
                 <label class="form-options__label">
-                  <input class="form-options__input" type="checkbox" name="additionally">
+                  <input class="form-options__input" type="checkbox" name="water">
                   питьевая вода
                 </label>
               </li>
               <li class="form-options__item">
                 <label class="form-options__label">
-                  <input class="form-options__input" type="checkbox" name="additionally">
+                  <input class="form-options__input" type="checkbox" name="milk">
                   молоко
                 </label>
               </li>
               <li class="form-options__item">
                 <label class="form-options__label">
-                  <input class="form-options__input" type="checkbox" name="additionally">
+                  <input class="form-options__input" type="checkbox" name="vitamins">
                   витамины
                 </label>
               </li>
@@ -161,7 +158,7 @@
           </fieldset>
           <div class="form-options__submit">
             <button class="form-options__button" type="submit">отправить заявку</button>
-            <p class="form-options__requared">
+            <p class="form-options__required">
               * — Обязательные поля
             </p>
           </div>
